@@ -30,7 +30,7 @@
                         <li><i class="flaticon-telephone"></i>Telefon 0850 360 00 80</li>
                         <li><i class="flaticon-envelope"></i>LaykinDanismanlik@gmail.com</li>
                     </ul>
-                    <ul class="social-style-one float_right">
+                    <ul class="social-style-one float_right hidden-xs">
                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                         <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
@@ -71,8 +71,8 @@
                                     <li class="dropdown">
                                         <a href="@Url.Action("Index","About")">Biz Kimiz</a>
                                         <ul>
-                                            <li><a href="about.html">Hakkımızda</a></li>
-                                            <li><a href="team.html">Takımımız</a></li>
+                                            <li><a href="@Url.Action("Index","About")">Hakkımızda</a></li>
+                                            <li><a href="@Url.Action("Index","About")">Takımımız</a></li>
                                         </ul>
                                     </li>
 
@@ -84,16 +84,8 @@
                                         </ul>
                                     </li>
 
-                                    <li class="dropdown">
-                                        <a href="#">Servis</a>
-                                        <ul>
-                                            <li><a href="service.html">Servisler</a></li>
-                                            <li><a href="service-single.html">Servis Detayları</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="dropdown">
-                                        <a href="#">Blog</a>
+                                    <li>
+                                        <a href="@Url.Action("Index","Blog")">Blog</a>
                                     </li>
                                 </ul>
 
@@ -103,8 +95,13 @@
                                         <a href="@Url.Action("Index","Home")">Anasayfa</a>
                                     </li>
 
-                                    <li>
+
+                                    <li class="dropdown">
                                         <a href="@Url.Action("Index","About")">Biz Kimiz</a>
+                                        <ul>
+                                            <li><a href="@Url.Action("Index","About")">Hakkımızda</a></li>
+                                            <li><a href="@Url.Action("Index","About")">Takımımız</a></li>
+                                        </ul>
                                     </li>
 
                                     <li class="dropdown">
@@ -115,15 +112,7 @@
                                         </ul>
                                     </li>
 
-                                    <li class="dropdown">
-                                        <a href="#">Servis</a>
-                                        <ul>
-                                            <li><a href="service.html">Servisler</a></li>
-                                            <li><a href="service-single.html">Servis Detayları</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="dropdown">
+                                    <li>
                                         <a href="#">Blog</a>
                                     </li>
                                 </ul>
@@ -135,7 +124,7 @@
                         <div class="right-column">
                             <div class="right-area">
                                 <div class="link-btn4 float_right">
-                                    <a href="#" class="btn-style-one">Bize Ulaşın</a>
+                                    <a href="@Url.Action("Index","Contact")" class="btn-style-one">Bize Ulaşın</a>
                                 </div>
                             </div>
                         </div>

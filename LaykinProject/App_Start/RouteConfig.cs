@@ -20,6 +20,18 @@ namespace LaykinProject
             );
 
             routes.MapRoute(
+                name: "Blog",
+                url: "blog",
+                defaults: new { controller = "Blog", action = "Index" }
+            );
+
+            routes.MapRoute(
+                name: "Contact",
+                url: "iletisim",
+                defaults: new { controller = "Contact", action = "Index" }
+            );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
